@@ -5,6 +5,7 @@ import ServicesSection from "@/components/services-section"
 import FeaturesSection from "@/components/features-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import WhyChooseUsSection from "@/components/why-choose-us-section"
+import PaymentMethodsSection from "@/components/payment-methods-section"
 import FAQSection from "@/components/faq-section"
 import ContactSection from "@/components/contact-section"
 import FloatingButtons from "@/components/floating-buttons"
@@ -19,6 +20,7 @@ export default function Home() {
       <FeaturesSection />
       <TestimonialsSection />
       <WhyChooseUsSection />
+      <PaymentMethodsSection />
       <FAQSection />
       <ContactSection />
       <FloatingButtons />

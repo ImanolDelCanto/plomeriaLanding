@@ -18,7 +18,7 @@ export default function FloatingButtons() {
         href="tel:1123456789"
         className="fixed bottom-20 right-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 z-50 text-sm font-bold"
       >
-        🚨 Urgencias las 24hs
+        🚨 Urgencias CABA y GBA 24hs
       </a>
     </>
   )

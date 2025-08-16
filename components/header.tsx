@@ -8,14 +8,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
             <Image
-              src="/images/logo-destapaciones.jpeg"
-              alt="Destapaciones Zona Sur"
+              src="/images/logo-destapaciones.png"
+              alt="Destapaciones y Plomerías"
               width={50}
               height={50}
               className="rounded-full"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Destapaciones Zona Sur</h1>
+              <h1 className="text-xl font-bold text-gray-900">Destapaciones y Plomerías</h1>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export default function Header() {
             <div className="text-right">
               <div className="flex items-center text-sm text-gray-600">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                Urgencias 11 2345-6789
+                Urgencias CABA y GBA 11 2345-6789
               </div>
               <div className="text-lg font-semibold text-gray-900">11 8765-4321</div>
             </div>
