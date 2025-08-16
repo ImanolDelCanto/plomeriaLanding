@@ -13,7 +13,7 @@ export default function PaymentMethodsSection() {
           {/* Digital Payment Platforms */}
           <div className="bg-gray-50 p-4 rounded-lg w-full flex items-center justify-center h-20">
             <Image
-              src="/mercadopago.png"
+              src="/mercadoPago.png"
               alt="Mercado Pago"
               width={120}
               height={40}
@@ -23,7 +23,7 @@ export default function PaymentMethodsSection() {
          <div className="bg-gray-50 p-4 rounded-lg w-full flex items-center justify-center h-20">
             <Image
               src="/efectivo.jpg"
-              alt="Mercado Pago"
+              alt="Efectivo"
               width={120}
               height={40}
               className="object-contain"
