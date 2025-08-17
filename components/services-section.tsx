@@ -18,7 +18,7 @@ export default function ServicesSection() {
       title: "Instalaciones de Gas",
       description:
         "Conexión de anafes, estufas tiro balanceado, cocinas, calefones, termotanques y calderas. Colocación de llaves de paso y reguladores.",
-      image: "/plumber-connecting-stove.png",
+      image: "/gas.webp",
     },
     {
       title: "Instalaciones de Elementos",

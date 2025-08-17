@@ -28,7 +28,7 @@ export default function WhyChooseUsSection() {
     <section className="py-16 bg-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Por qué elegir Destapaciones Zona Sur?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Por qué elegir Destapaciones y Plomerías?</h2>
           <p className="text-blue-100 max-w-2xl mx-auto">
             Más de 12 años de experiencia nos respaldan como líderes en servicios de plomería
           </p>

@@ -7,8 +7,9 @@ import TestimonialsSection from "@/components/testimonials-section"
 import WhyChooseUsSection from "@/components/why-choose-us-section"
 import PaymentMethodsSection from "@/components/payment-methods-section"
 import FAQSection from "@/components/faq-section"
-import ContactSection from "@/components/contact-section"
 import FloatingButtons from "@/components/floating-buttons"
+import Footer from "@/components/footer"
+import VisualSeparator from "@/components/visual-separator"
 
 export default function Home() {
   return (
@@ -21,8 +22,9 @@ export default function Home() {
       <TestimonialsSection />
       <WhyChooseUsSection />
       <PaymentMethodsSection />
+      <VisualSeparator/>
       <FAQSection />
-      <ContactSection />
+      <Footer/>
       <FloatingButtons />
     </main>
   )

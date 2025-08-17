@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 
 export default function Header() {
   return (
@@ -31,16 +30,14 @@ export default function Header() {
                 FAQ
               </a>
             </nav>
-            <Button className="bg-blue-600 hover:bg-blue-700">Contacto</Button>
           </div>
 
           <div className="flex items-center space-x-4">
             <div className="text-right">
               <div className="flex items-center text-sm text-gray-600">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
-                Urgencias CABA y GBA 11 2345-6789
+                Urgencias CABA y GBA 11 5915-1536
               </div>
-              <div className="text-lg font-semibold text-gray-900">11 8765-4321</div>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function FAQSection() {
     {
       question: "¿Cómo puedo solicitar un presupuesto?",
       answer:
-        "Puede solicitar un presupuesto llamando al 11 8765-4321, por WhatsApp o completando nuestro formulario de contacto. Realizamos evaluaciones gratuitas y presupuestos sin compromiso.",
+        "Puede solicitar un presupuesto llamando al 11 5915-1536, por WhatsApp o completando nuestro formulario de contacto. Realizamos evaluaciones gratuitas y presupuestos sin compromiso.",
     },
   ]
 
