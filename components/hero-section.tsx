@@ -5,7 +5,7 @@ export default function HeroSection() {
       id="inicio"
       className="relative h-[600px] bg-cover bg-center bg-gray-900"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/destapa3.jpg')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/destapa3.webp')`,
       }}
     >
       <div className="absolute inset-0 flex items-center justify-center">

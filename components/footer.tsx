@@ -1,4 +1,5 @@
 import { Phone, Clock} from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -58,6 +59,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © 2025 Destapaciones y Plomerías. Todos los derechos reservados.
+            </p>
+            <p className="text-gray-400 text-sm">
+             Desarrollado por <Link href={"https://www.gretsoft.com.ar/"} className="hover:text-white " target="_blank" >Gretsoft</Link>
             </p>
           </div>
         </div>

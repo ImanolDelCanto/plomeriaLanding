@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
             <Image
-              src="/images/logo-destapaciones.png"
+              src="/images/logo-destapaciones.webp"
               alt="Destapaciones y Plomerías"
               width={50}
               height={50}

@@ -6,13 +6,13 @@ export default function ServicesSection() {
       title: "Destapación de Cañerías",
       description:
         "Destapación profesional de cañerías, tuberías y desagües con equipos especializados. Servicio de termofusión, pinchaduras y reparaciones en general.",
-      image: "/equipo-destapacion.jpeg",
+      image: "/equipo-destapacion.webp",
     },
     {
       title: "Instalaciones Sanitarias",
       description:
         "Instalación y reparación de inodoros, mochilas, bidets, lavatorios, bachas y piletas de patio. Trabajos profesionales con garantía.",
-      image: "/plumber-installing-toilet.png",
+      image: "/plumber-installing-toilet.webp",
     },
     {
       title: "Instalaciones de Gas",
@@ -24,19 +24,19 @@ export default function ServicesSection() {
       title: "Instalaciones de Elementos",
       description:
         "Instalación de canillas, llaves de paso, griferías completas, válvulas y accesorios. Trabajos de precisión y calidad.",
-      image: "/kitchen-sink-drain-cleaning.png",
+      image: "/kitchen-sink-drain-cleaning.webp",
     },
     {
       title: "Instalaciones de Equipos",
       description:
         "Conexión de lavarropas, calefones, termotanques de todas las marcas. Instalaciones eléctricas y de agua para electrodomésticos.",
-      image: "/plumber-cleaning-drain.png",
+      image: "/plumber-cleaning-drain.webp",
     },
     {
       title: "Reparaciones en General",
       description:
         "Soldaduras, hidrobronz, termofusión, conexiones, reparaciones e instalaciones. Control de pérdidas de gas y mantenimiento.",
-      image: "/plumber-pipes-drainage.png",
+      image: "/plumber-pipes-drainage.webp",
     },
   ]
 
