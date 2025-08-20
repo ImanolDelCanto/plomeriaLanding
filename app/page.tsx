@@ -10,16 +10,9 @@ import FAQSection from "@/components/faq-section"
 import FloatingButtons from "@/components/floating-buttons"
 import Footer from "@/components/footer"
 import VisualSeparator from "@/components/visual-separator"
-import type { Metadata } from "next"
+import SEOContentSection from "@/components/seo-content-section"
 
-export const metadata: Metadata = {
-  title: "Destapaciones y Plomerías 24hs | Servicio Urgente CABA y GBA | DestapacionesPlomero.com",
-  description:
-    "DESTAPACIONES URGENTES 24HS  Plomeros profesionales en CABA y Gran Buenos Aires.  Equipos especializados - Precios justos. ¡Llamá ahora!",
-  alternates: {
-    canonical: "https://www.destapacionesplomero.com",
-  },
-}
+// ... existing metadata ...
 
 export default function Home() {
   return (
@@ -28,6 +21,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <ServicesSection />
+      <SEOContentSection />
       <FeaturesSection />
       <TestimonialsSection />
       <WhyChooseUsSection />

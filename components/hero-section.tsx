@@ -1,4 +1,3 @@
-
 export default function HeroSection() {
   return (
     <section
@@ -10,11 +9,21 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center text-white max-w-4xl px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Destapaciones y Plomerías</h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Servicios profesionales de plomería, destapaciones, instalaciones de gas y sanitarios en CABA y Gran Buenos
-            Aires
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Destapaciones Plomero 24hs</h1>
+          <h2 className="text-2xl md:text-3xl mb-4 text-yellow-400 font-semibold">
+            Servicio Profesional en CABA y Gran Buenos Aires
+          </h2>
+          <p className="sr-only text-xl md:text-2xl mb-8 text-gray-200">
+            🔧 <strong>Plomero especializado</strong> en destapaciones urgentes, instalaciones sanitarias, reparaciones
+            de gas y plomería general. <strong>Equipos profesionales</strong> - Garantía total - Precios justos
           </p>
+          <div className="sr-only mt-8 text-lg text-gray-300">
+            <p className="mb-2">
+              ✅ <strong>Destapaciones plomero</strong> con máquinas especializadas
+            </p>
+            <p className="mb-2">✅ Plomero profesional - Servicio las 24 horas</p>
+            <p>✅ Cobertura total: CABA, Zona Norte, Zona Sur y Oeste</p>
+          </div>
         </div>
       </div>
     </section>
