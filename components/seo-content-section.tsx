@@ -1,62 +1,70 @@
-export default function SEOContentSection() {
+export default function SeoContentSection() {
   return (
-    <section className="sr-only" aria-hidden="true">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="prose prose-lg mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            ¿Por qué elegir nuestro servicio de Destapaciones Plomero?
-          </h2>
+          <h2>Destapaciones Plomero - Servicio Profesional 24hs</h2>
+          <p>
+            En <strong>Destapaciones Plomero</strong> somos especialistas en todo tipo de <strong>destapaciones de cañerías</strong> y
+            <strong>destapaciones cloacales</strong>. Nuestro equipo de <strong>plomeros profesionales</strong> cuenta con más de 10 años
+            de experiencia brindando soluciones efectivas para problemas de obstrucción en toda la Zona Sur del Gran Buenos Aires.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-8 text-gray-700">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Destapaciones Plomero Especializado</h3>
-              <p className="mb-4">
-                Nuestro servicio de <strong>destapaciones plomero</strong> cuenta con equipos de última generación y
-                técnicos especializados. Realizamos destapaciones en CABA y Gran Buenos Aires las 24 horas, garantizando
-                soluciones rápidas y efectivas.
-              </p>
-              <p>
-                Como <strong>plomero profesional</strong>, utilizamos máquinas especializadas para destapaciones
-                complejas, termofusión y reparaciones urgentes. Nuestro equipo está capacitado para resolver cualquier
-                problema de plomería.
-              </p>
-            </div>
+          <h3>Destapaciones con máquina profesional</h3>
+          <p>
+            Realizamos <strong>destapaciones con máquina</strong> de última generación que garantizan un trabajo limpio y efectivo.
+            Nuestros equipos profesionales pueden resolver desde simples <strong>destapaciones de inodoros</strong> hasta complejas
+            <strong>destapaciones de cañerías principales</strong> y <strong>desagües pluviales</strong>.
+          </p>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Plomero 24 Horas en Buenos Aires</h3>
-              <p className="mb-4">
-                Somos el <strong>plomero de confianza</strong> en Buenos Aires. Nuestro servicio de
-                <strong> destapaciones plomero</strong> está disponible las 24 horas, los 365 días del año. Atendemos
-                emergencias en toda CABA, Zona Norte, Sur y Oeste.
-              </p>
-              <p>
-                Nuestros <strong>plomeros profesionales</strong> ofrecen garantía en todos los trabajos. Desde
-                destapaciones simples hasta instalaciones complejas, somos tu mejor opción en servicios de plomería
-                profesional.
-              </p>
-            </div>
-          </div>
+          <h3>Servicio de destapaciones en Zona Sur</h3>
+          <p>
+            Ofrecemos <strong>destapaciones en Lomas de Zamora</strong>, <strong>destapaciones en Banfield</strong>, <strong>destapaciones en Temperley</strong>,
+            <strong>destapaciones en Adrogué</strong> y todas las localidades de la Zona Sur. Nuestro equipo de <strong>plomeros destapadores</strong> llega
+            en menos de 30 minutos a cualquier punto de la zona.
+          </p>
 
-          <div className="mt-12 bg-blue-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-900">
-              Zonas de Cobertura - Destapaciones Plomero
-            </h3>
-            <div className="grid md:grid-cols-3 gap-4 text-center">
-              <div>
-                <h4 className="font-semibold text-gray-900">CABA</h4>
-                <p className="text-sm text-gray-600">Plomero en todos los barrios de Capital Federal</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">Zona Norte</h4>
-                <p className="text-sm text-gray-600">San Isidro, Vicente López, Tigre, San Fernando</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">Zona Sur</h4>
-                <p className="text-sm text-gray-600">Avellaneda, Quilmes, Lanús, Lomas de Zamora</p>
-              </div>
-            </div>
-          </div>
+          <h3>Destapaciones de urgencia 24 horas</h3>
+          <p>
+            Contamos con <strong>servicio de destapaciones de urgencia</strong> disponible las 24 horas, los 365 días del año.
+            Si tiene una emergencia por <strong>caño tapado</strong> o <strong>inodoro tapado</strong>, nuestros <strong>plomeros destapadores</strong>
+            están listos para asistirlo en cualquier momento, incluso en fines de semana y feriados.
+          </p>
+
+          <h3>¿Por qué elegirnos para sus destapaciones?</h3>
+          <ul>
+            <li><strong>Respuesta inmediata</strong>: Atendemos su llamado al instante y llegamos en menos de 30 minutos.</li>
+            <li><strong>Equipos profesionales</strong>: Utilizamos máquinas destapadoras de última generación.</li>
+            <li><strong>Técnicos especializados</strong>: Nuestros plomeros cuentan con certificación y amplia experiencia.</li>
+            <li><strong>Garantía escrita</strong>: Todos nuestros trabajos tienen garantía de satisfacción.</li>
+            <li><strong>Precios justos</strong>: Ofrecemos tarifas competitivas y presupuestos sin cargo.</li>
+          </ul>
+
+          <p>
+            Si busca el mejor <strong>servicio de destapaciones en Zona Sur</strong>, no dude en contactarnos. En <strong>Destapaciones Plomero</strong>
+            resolveremos su problema de forma rápida, efectiva y profesional.
+          </p>
         </div>
+      </div>
+
+      {/* Contenido SEO adicional invisible */}
+      <div className="hidden">
+        <h4>Destapaciones plomero servicio profesional</h4>
+        <p>
+          Destapaciones plomero ofrece servicios profesionales de destapaciones de cañerías, destapaciones de inodoros, destapaciones de lavaderos,
+          destapaciones de cocinas, destapaciones de pluviales y destapaciones cloacales en toda la zona sur. Nuestro equipo de plomeros especializados
+          en destapaciones cuenta con las herramientas y conocimientos necesarios para resolver cualquier tipo de obstrucción.
+        </p>
+        <h4>Destapaciones plomero zona sur</h4>
+        <p>
+          Somos la empresa líder en destapaciones en la zona sur del Gran Buenos Aires. Cubrimos Lomas de Zamora, Banfield, Temperley, Adrogué,
+          Lanús, Avellaneda, Quilmes, Berazategui y todas las localidades circundantes. Destapaciones plomero es sinónimo de calidad y confianza en toda la región.
+        </p>
+        <h4>Destapaciones plomero 24 horas</h4>
+        <p>
+          Nuestro servicio de destapaciones de urgencia está disponible las 24 horas del día, los 7 días de la semana. Ante cualquier emergencia de plomería,
+          destapaciones plomero es la solución inmediata que necesita.
+        </p>
       </div>
     </section>
   )

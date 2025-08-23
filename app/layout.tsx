@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 
@@ -14,70 +14,50 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Destapaciones Plomero 24hs | CABA y GBA | DestapacionesPlomero.com",
+  title: "Destapaciones Plomero | Servicio profesional de destapaciones 24hs",
   description:
-    "🔧 DESTAPACIONES PLOMERO profesional 24 horas en CABA y Gran Buenos Aires. Servicio inmediato, equipos especializados, garantía total. ¡Llamá ya!",
-  keywords: [
-    "destapaciones plomero",
-    "plomero destapaciones",
-    "destapaciones",
-    "plomero",
-    "destapacionesplomero",
-    "destapaciones caba",
-    "plomero caba",
-    "destapaciones buenos aires",
-    "plomero buenos aires",
-    "destapaciones 24 horas",
-    "plomero 24 horas",
-    "plomero urgente",
-    "destapaciones urgentes",
-    "destapaciones gran buenos aires",
-    "plomero gran buenos aires",
-    "servicio plomería",
-    "destapación cañerías",
-    "plomero zona norte",
-    "plomero zona sur",
-    "destapaciones zona norte",
-    "destapaciones zona sur",
-    "instalaciones sanitarias",
-    "reparaciones plomería",
-    "destapaciones profesionales",
-    "plomero profesional",
-  ],
-  authors: [{ name: "Destapaciones y Plomerías" }],
-  creator: "Destapaciones y Plomerías",
-  publisher: "DestapacionesPlomero.com",
+    "Destapaciones Plomero ofrece servicio profesional de destapaciones de cañerías, cloacas y desagües. Atención inmediata en CABA y Zona Sur. Presupuesto sin cargo.",
+  keywords:
+    "destapaciones plomero, destapaciones cañerías, destapaciones cloacas, destapaciones de cañerías, plomero destapaciones, plomero urgencia, destapaciones 24 horas, destapaciones zona sur, destapaciones de inodoros, destapaciones de cocinas",
+  alternates: {
+    canonical: "https://www.destapacionesplomero.com/",
+  },
+  openGraph: {
+    title: "Destapaciones Plomero | El mejor servicio de destapaciones",
+    description:
+      "Somos especialistas en destapaciones de cañerías, cloacas y desagües. Servicio profesional disponible 24hs en CABA y Zona Sur.",
+    url: "https://www.destapacionesplomero.com/",
+    siteName: "Destapaciones Plomero",
+    locale: "es_AR",
+    type: "website",
+    images: [
+      {
+        url: "https://www.destapacionesplomero.com/images/logo-destapaciones.webp",
+        width: 800,
+        height: 600,
+        alt: "Destapaciones Plomero servicio profesional",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Destapaciones Plomero | Destapaciones profesionales 24hs",
+    description:
+      "Servicio de destapaciones de cañerías, cloacas y desagües. Atención inmediata en CABA y Zona Sur.",
+    images: ["https://www.destapacionesplomero.com/images/logo-destapaciones.webp"],
+  },
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
-  openGraph: {
-    type: "website",
-    locale: "es_AR",
-    url: "https://www.destapacionesplomero.com",
-    siteName: "Destapaciones Plomero",
-    title: "Destapaciones Plomero 24hs | CABA y GBA | DestapacionesPlomero.com",
-    description:
-      "🔧 DESTAPACIONES PLOMERO profesional las 24 horas en CABA y Gran Buenos Aires. Equipos especializados, servicio inmediato, garantía total.",
-    images: [
-      {
-        url: "/logo-destapaciones.webp",
-        width: 1200,
-        height: 630,
-        alt: "Destapaciones Plomero - Servicio Profesional 24hs CABA y GBA",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://www.destapacionesplomero.com",
-  },
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#1e3a8a",
 }
 
 export default function RootLayout({
