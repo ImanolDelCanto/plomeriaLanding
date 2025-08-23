@@ -4,13 +4,12 @@
   <!-- Página principal optimizada -->
   <url>
     <loc>https://www.destapacionesplomero.com/</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.destapacionesplomero.com/logo-destapaciones.webp</image:loc>
-      <image:title>Destapaciones Plomero - Servicio Profesional 24hs</image:title>
-      <image:caption>Destapaciones plomero profesional en CABA y Gran Buenos Aires</image:caption>
+      <image:loc>https://www.destapacionesplomero.com/images/logo-destapaciones.webp</image:loc>
+      <image:title>Destapaciones Plomero 24hs CABA y GBA</image:title>
     </image:image>
   </url>
   
