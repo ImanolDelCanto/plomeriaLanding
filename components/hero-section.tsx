@@ -1,6 +1,16 @@
+"use client"
+
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
+
+
+
+
 export default function HeroSection() {
+  const { ref, hasIntersected } = useIntersectionObserver()
+
   return (
     <section
+      ref={ref}
       id="inicio"
       className="relative h-[600px] bg-cover bg-center bg-gray-900"
       style={{
@@ -8,9 +18,13 @@ export default function HeroSection() {
       }}
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center text-white max-w-4xl px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Destapaciones Plomero 24hs</h1>
-          <h2 className="text-2xl md:text-3xl mb-4 text-yellow-400 font-semibold">
+        <div
+          className={`text-center text-white max-w-4xl px-4 transition-all duration-1000 ${
+            hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">Destapaciones Plomero 24hs</h1>
+          <h2 className="text-2xl md:text-3xl mb-4 text-yellow-400 font-semibold animate-fade-in-up animation-delay-200">
             Servicio Profesional en CABA y Gran Buenos Aires
           </h2>
           <p className="sr-only text-xl md:text-2xl mb-8 text-gray-200">

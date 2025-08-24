@@ -1,6 +1,11 @@
+"use client"
+
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import Image from "next/image"
 
 export default function ServicesSection() {
+  const { ref, hasIntersected } = useIntersectionObserver()
+
   const services = [
     {
       title: "Destapación de Cañerías",
@@ -41,9 +46,13 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="servicios" className="py-16 bg-white">
+    <section ref={ref} id="servicios" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div
+          className={`text-center mb-12 transition-all duration-700 ${
+            hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestros Servicios</h2>
           <p className="text-xl text-gray-600">Soluciones completas de plomería para CABA y Gran Buenos Aires</p>
         </div>
@@ -52,13 +61,25 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-700`}
+              style={{ 
+                transitionDelay: `${index * 300}ms`,
+                transform: hasIntersected ? 'translateY(0)' : 'translateY(50px)',
+                opacity: hasIntersected ? 1 : 0 
+              }}
             >
-              <div className="relative h-48">
-                <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={service.image || "/placeholder.svg"}
+                  alt={service.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
               </div>
             </div>

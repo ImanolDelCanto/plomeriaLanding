@@ -20,9 +20,17 @@ export default function FeaturesSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000`}>
           {features.map((feature, index) => (
-            <div key={index} className="text-center">
+            <div
+              key={feature.title}
+              className={`bg-white p-6 rounded-lg shadow-lg transition-all duration-800`}
+              style={{ 
+                transitionDelay: `${index * 200}ms`,
+                transform: 'translateY(0)',
+                opacity: 1 
+              }}
+            >
               <div className="text-6xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>

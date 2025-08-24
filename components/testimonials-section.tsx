@@ -1,6 +1,11 @@
+"use client"
+
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { Star } from "lucide-react"
 
 export default function TestimonialsSection() {
+  const { ref, hasIntersected } = useIntersectionObserver()
+
   const testimonials = [
     {
       name: "María González",
@@ -26,9 +31,13 @@ export default function TestimonialsSection() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section ref={ref} className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div
+          className={`text-center mb-12 transition-all duration-1000 ${
+            hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Miles de clientes satisfechos en toda la Zona Sur confían en nuestro servicio
@@ -37,10 +46,20 @@ export default function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-6">
+            <div
+              key={index}
+              className={`bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-800 ${
+                hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+              }`}
+              style={{ transitionDelay: `${index * 250}ms` }}
+            >
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 text-yellow-400 fill-current hover:scale-110 transition-transform duration-200"
+                    style={{ transitionDelay: `${i * 50}ms` }}
+                  />
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">&quot;{testimonial.comment}&quot;</p>
